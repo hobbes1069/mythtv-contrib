@@ -1,0 +1,8 @@
+[Unit]
+Description=Update symbolic links of recordings for Plex
+After=mythbackend.service
+Requisite=mythbackend.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/libexec/mythlink.sh

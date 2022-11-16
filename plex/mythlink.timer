@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for the mythlink service 
+
+[Timer]
+#OnCalendar=*-*-* 00:00:00
+OnCalendar=daily
+#OnUnitActiveSec=1d
+
+[Install]
+WantedBy=multi-user.target
